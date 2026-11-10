@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="2026 后摇日历。365 天，每天一首歌，一页关于音乐与时间的私人回响。">
+<title>2026 后摇日历 · Post-Rock Calendar</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="canonical" href="https://post-rock-calendar-2026-aijia.mxpx1983.chatgpt.site">
+<link rel="stylesheet" href="style.css?v=20261110-9">
+</head>
+<body>
+<header>
+<a class="brand" href="#" aria-label="后摇日历首页">
+<img id="logo" src="assets/logo-header.png?v=20261110-2" alt="Post-Rock Calendar 2026">
+<span>POST-ROCK<br>CALENDAR / 2026</span>
+</a>
+<nav>
+<a href="#archive">全年索引 <small>365 DAYS</small>
+</a>
+<a href="#about">关于设计 <small>THE OBJECT</small>
+</a>
+<a href="https://music.163.com/#/playlist?id=17452628680" target="_blank" rel="noopener">年度歌单 ↗</a>
+</nav>
+<span class="edition">AN INSTRUMENTAL YEAR</span>
+</header>
+<main>
+<section id="daily" class="daily">
+<div class="intro">
+<span class="eyebrow">一天 一曲</span>
+<h1>让时间<br>有回响<span>。</span>
+</h1>
+<p>365 DAYS OF RESONANCE</p>
+<img class="intro-icon" src="assets/hero-icon.png?v=20261110-2" alt="后摇日历核心元素">
+</div>
+<div class="scene" id="scene">
+<span class="scene-index" id="scene-index">001 / 365</span>
+<button id="card" class="card" aria-label="点击日历，打开分享者寄语">
+<img id="calendar" alt="每日日历原始设计">
+<span class="loading">正在翻页…</span>
+</button>
+<div class="card-tools">
+<button id="flip">↗ 读纸背的声音</button>
+<span>左右拖动切日 · 点击读背面</span>
+<button id="enlarge" aria-label="放大日历">⤢</button>
+</div>
+</div>
+<aside class="daily-info">
+<span class="eyebrow" id="day-counter">DAY 001 — 2026</span>
+<div class="date-display" id="date-display">01<span>/</span>01</div>
+<p id="weekday" class="weekday">THURSDAY</p>
+<div class="song">
+<span class="eyebrow">THE SOUND OF THIS DAY</span>
+<h2 id="song-title">今日之声</h2>
+<p id="artist">
+</p>
+<p id="album" class="muted">
+</p>
+<a id="listen" class="listen" href="https://music.163.com/#/playlist?id=17452628680" target="_blank" rel="noopener">
+<span>↗</span> 在网易云聆听</a>
+<small id="song-note">
+</small>
+</div>
+<div class="day-actions">
+<button id="today">今天 <small>TODAY</small>
+</button>
+<button id="random">随机一天 ↗</button>
+</div>
+<label class="date-picker">跳转到日期<input id="date-input" type="date" min="2026-01-01" max="2026-12-31" value="2026-01-01" aria-label="选择2026年的日期">
+</label>
+</aside>
+<div class="year-nav">
+<button id="prev" aria-label="前一天">←</button>
+<div id="months">
+</div>
+<button id="next" aria-label="后一天">→</button>
+<input id="timeline" type="range" min="0" max="364" value="0" aria-label="全年时间轴">
+<span class="timeline-start">JAN 01</span>
+<span class="timeline-end">DEC 31</span>
+</div>
+<div class="hero-foot">
+<span>向前看，别回头。</span>
+<a href="#archive">EXPLORE THE YEAR ↓</a>
+<span>音乐会带我们去往明天。</span>
+</div>
+</section>
+<section id="archive" class="archive section">
+<div class="section-heading">
+<div>
+<span class="eyebrow">01 / THE YEAR IN PAGES</span>
+<h2>把这一年，慢慢听完。</h2>
+</div>
+<button id="view-all">展开全年 365 天 ↗</button>
+</div>
+<div class="archive-controls">
+<div id="archive-months">
+</div>
+<label class="search-wrap">
+<span>⌕</span>
+<input id="search" type="search" placeholder="搜索歌名、乐队或日期" aria-label="搜索日历">
+</label>
+</div>
+<p class="archive-caption" id="archive-caption">
+</p>
+<div id="grid" class="grid">
+</div>
+<p id="empty" hidden>没有找到对应的日历。试试乐队名、歌名或 2026-01-01。</p>
+</section>
+<section id="about" class="about section">
+<div class="about-copy">
+<span class="eyebrow">02 / BEYOND THE SOUND</span>
+<h2>眼前虽有阴霾，<br>但心里，还有光。</h2>
+<p class="about-lyric">The Sun Shines On My Shoulders Like A Free Man</p>
+<span class="quiet">有些话，止于唇齿，有些答案，留给时间。</span>
+</div>
+<figure class="about-image">
+<img id="cover-shot" loading="lazy" alt="后摇日历实体设计效果图">
+<figcaption>POST-ROCK CALENDAR / 2026</figcaption>
+</figure>
+</section>
+<section class="objects section">
+<div class="section-heading">
+<div>
+<span class="eyebrow">03 / FROM PAPER TO EVERYDAY</span>
+<h2>音乐记录时光</h2>
+</div>
+<p>每日选曲 · 双面设计 · 纸上回响</p>
+</div>
+<div id="showcase" class="showcase">
+</div>
+<div class="design-notes">
+<article>
+<span>01 — DAILY RHYTHM</span>
+<h3>以一天为单位</h3>
+<p>日期、唱片与选曲共同构成每一页。留白让视线停下来，也让旋律有了停驻的位置。</p>
+</article>
+<article>
+<span>02 — TWO SIDES</span>
+<h3>翻过去，再停留片刻</h3>
+<p>正面与背面，是同一天的两种阅读方式。点击正面，在弹窗中阅读分享者写下的内容。</p>
+</article>
+<article>
+<span>03 — KEEP MOVING</span>
+<h3>贯穿一年的陪伴</h3>
+<p>熟悉的符号，随着时间一路同行。向前看，别回头。</p>
+</article>
+</div>
+</section>
+<section class="packaging section">
+<div class="section-heading">
+<div>
+<span class="eyebrow">04 / CARRY THE RESONANCE</span>
+<h2>装下一年的声音。</h2>
+</div>
+<p>包装与随行</p>
+</div>
+<div id="packaging" class="packaging-grid">
+</div>
+</section>
+<footer>
+<img id="footer-icon" src="assets/footer-icon-custom.png?v=20261110-2" alt="后摇日历底部图标" loading="lazy">
+<h2 class="footer-quote"><span>宇宙在身旁喧嚣了十个循环，</span><span>而我们，只是安静地翻过了一页</span><small>后摇日历编辑部</small></h2>
+<a href="#daily">回到这一页 ↑</a>
+<div>
+<span>2026 后摇日历 · POST-ROCK CALENDAR</span>
+<span>365 DAYS. KEEP MOVING.</span>
+<a href="https://www.alibabafonts.com" target="_blank" rel="noopener">字体：阿里巴巴普惠体</a>
+</div>
+</footer>
+</main>
+<dialog id="lightbox" aria-labelledby="dialog-title">
+<button id="close-lightbox" aria-label="关闭放大图">关闭 ×</button>
+<h2 id="dialog-title">
+</h2>
+<img alt="日历设计放大图">
+<details id="back-transcript">
+<summary>阅读文字版</summary>
+<p id="back-text">
+</p>
+</details>
+</dialog>
+<p class="sr-only" id="announcement" aria-live="polite">
+</p>
+<script src="calendar-data.js?v=20261110-5"></script>
+<script src="assets-manifest-data.js?v=20261110-5"></script>
+<script src="app.js?v=20261110-10">
+</script>
+</body>
+</html>
