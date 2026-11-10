@@ -37,3 +37,13 @@ footer>img{width:180px;height:180px}
 
 /* Hide the two redundant packaging captions. */
 .packaging-grid figure:nth-child(-n+2) figcaption{display:none}
+
+/* Background music toggle (top-left, next to logo) */
+#bgm-toggle{width:34px;height:34px;flex:none;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--muted);transition:color .2s,border-color .2s}
+#bgm-toggle svg{width:11px;height:11px;display:block}
+#bgm-toggle .ic-pause{display:none}
+#bgm-toggle:hover{color:#fff;border-color:var(--muted)}
+#bgm-toggle.playing{color:var(--accent);border-color:#62645b}
+#bgm-toggle.playing .ic-pause{display:block}
+#bgm-toggle.playing .ic-play{display:none}
+@media(max-width:700px){#bgm-toggle{width:30px;height:30px;margin-left:-6px}#bgm-toggle svg{width:10px;height:10px}}

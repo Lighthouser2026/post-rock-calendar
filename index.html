@@ -8,12 +8,16 @@
 <title>2026 后摇日历 · Post-Rock Calendar</title>
 <link rel="icon" href="assets/icon.png">
 <link rel="canonical" href="https://post-rock-calendar-2026-aijia.mxpx1983.chatgpt.site">
-<link rel="stylesheet" href="style.css?v=20261110-9">
+<link rel="stylesheet" href="style.css?v=20261110-10">
 </head>
 <body>
 <header>
 <a class="brand" href="#" aria-label="后摇日历首页">
 <img id="logo" src="assets/logo-header.png?v=20261110-2" alt="Post-Rock Calendar 2026">
+<button id="bgm-toggle" type="button" aria-label="播放/暂停背景音乐" title="背景音乐 · After Sunset">
+<svg class="ic-play" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2.5 1.2v9.6L11 6z"/></svg>
+<svg class="ic-pause" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1h2.8v10H2zM7.2 1H10v10H7.2z"/></svg>
+</button>
 <span>POST-ROCK<br>CALENDAR / 2026</span>
 </a>
 <nav>
@@ -184,7 +188,8 @@
 </p>
 <script src="calendar-data.js?v=20261110-5"></script>
 <script src="assets-manifest-data.js?v=20261110-5"></script>
-<script src="app.js?v=20261110-10">
+<audio id="bgm" src="assets/after-sunset.mp3" loop preload="auto"></audio>
+<script src="app.js?v=20261110-11">
 </script>
 </body>
 </html>
