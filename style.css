@@ -29,7 +29,7 @@ footer>.footer-icon{width:180px;height:180px}
 @media(max-width:700px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* 2026-11-10 three-image showcase revision */
-.showcase{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.showcase{grid-template-columns:minmax(0,1fr);max-width:620px;margin:0 auto;gap:24px}
 .showcase figure{min-width:0;background:var(--bg)}
 .showcase img,.showcase figure:nth-child(1) img,.showcase figure:nth-child(4) img{width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;object-position:center;background:var(--bg)}
 .showcase figcaption{display:none}

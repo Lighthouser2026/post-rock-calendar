@@ -18,7 +18,7 @@
   var tex = null;
   var rafId = 0, lastT = 0, scroll = 0, paused = false;
 
-  var FALL = 8;   /* 下落速度 px/s，极慢 */
+  var FALL = 13;  /* 下落速度 px/s，缓慢 */
 
   var COLS = [
     [255, 214, 126],
