@@ -8,7 +8,7 @@
 <title>2026 后摇日历 · Post-Rock Calendar</title>
 <link rel="icon" href="assets/icon.png">
 <link rel="canonical" href="https://post-rock-calendar-2026-aijia.mxpx1983.chatgpt.site">
-<link rel="stylesheet" href="style.css?v=20261111-9">
+<link rel="stylesheet" href="style.css?v=20261113-1">
 </head>
 <body>
 <canvas id="gold-sand" aria-hidden="true"></canvas>
@@ -64,6 +64,23 @@
 </p>
 <a id="listen" class="listen" href="https://music.163.com/#/playlist?id=17452628680" target="_blank" rel="noopener">
 <span>↗</span> 在网易云聆听</a>
+<div class="day-player" id="day-player">
+<div class="dp-row">
+<button id="dp-play" class="dp-play" type="button" aria-label="播放今日歌曲">
+<svg class="dp-ic-play" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2.5 1.2v9.6L11 6z"/></svg>
+<svg class="dp-ic-pause" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1h2.8v10H2zM7.2 1H10v10H7.2z"/></svg>
+</button>
+<div class="dp-meta">
+<div class="dp-bar" id="dp-bar" role="slider" aria-label="播放进度" tabindex="0">
+<span class="dp-progress" id="dp-progress"></span>
+</div>
+<span class="dp-time" id="dp-time">--:-- / --:--</span>
+</div>
+<button id="dp-toggle" class="dp-toggle" type="button" aria-pressed="true">翻页即播放 · 开</button>
+</div>
+<p class="dp-state" id="dp-state">正在准备…</p>
+<audio id="day-audio" preload="auto"></audio>
+</div>
 <small id="song-note">
 </small>
 </div>
@@ -155,7 +172,8 @@
 <script src="assets-manifest-data.js?v=20261110-5"></script>
 <audio id="bgm" src="assets/after-sunset.mp3" loop preload="auto"></audio>
 <script src="gold-sand.js?v=20261111-4" defer></script>
-<script src="app.js?v=20261111-3">
+<script src="song-player.js?v=20261113-1"></script>
+<script src="app.js?v=20261113-1">
 </script>
 </body>
 </html>

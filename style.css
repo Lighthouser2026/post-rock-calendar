@@ -52,3 +52,31 @@ footer>.footer-icon .fi-sun{transform-origin:81.67% 48.33%;animation:sunBreath 4
 -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,1) 0%,rgba(0,0,0,.92) 8%,rgba(0,0,0,.64) 20%,rgba(0,0,0,.40) 32%,rgba(0,0,0,.21) 45%,rgba(0,0,0,.09) 60%,rgba(0,0,0,.03) 75%,rgba(0,0,0,0) 90%);
 mask-image:linear-gradient(to bottom,rgba(0,0,0,1) 0%,rgba(0,0,0,.92) 8%,rgba(0,0,0,.64) 20%,rgba(0,0,0,.40) 32%,rgba(0,0,0,.21) 45%,rgba(0,0,0,.09) 60%,rgba(0,0,0,.03) 75%,rgba(0,0,0,0) 90%)}
 @media(prefers-reduced-motion:reduce){#gold-sand{display:none}}
+
+/* ===== Day-song player (flip-to-play) ===== */
+.day-player{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.dp-row{display:flex;align-items:center;gap:12px}
+.dp-play{width:38px;height:38px;flex:0 0 38px;border:1px solid #62645b;border-radius:50%;display:grid;place-items:center;color:var(--accent);transition:border-color .25s,color .25s,transform .25s}
+.dp-play:hover{border-color:var(--accent);transform:scale(1.06)}
+.dp-play svg{width:12px;height:12px}
+.dp-play .dp-ic-pause{display:none}
+.dp-play.playing .dp-ic-play{display:none}
+.dp-play.playing .dp-ic-pause{display:block}
+.dp-meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:7px}
+.dp-bar{position:relative;height:3px;background:#2a2a27;cursor:pointer;overflow:hidden}
+.dp-bar:hover{background:#3a3a35}
+.dp-progress{display:block;height:100%;width:0;background:var(--accent);transition:width .2s linear}
+.dp-time{font-size:9px;letter-spacing:1px;color:var(--muted);font-variant-numeric:tabular-nums}
+.dp-toggle{flex:0 0 auto;font-size:9px;letter-spacing:.5px;color:var(--muted);border:1px solid var(--line);border-radius:2px;padding:6px 9px;transition:color .2s,border-color .2s}
+.dp-toggle[data-on="1"]{color:var(--accent);border-color:#4a4c42}
+.dp-toggle:hover{color:var(--paper);border-color:var(--muted)}
+.dp-state{margin:9px 0 0;font-size:9px;letter-spacing:1px;color:var(--muted);min-height:1.2em}
+.dp-state.err{color:#c98a6a}
+@media(max-width:700px){
+ .day-player{margin-top:14px;padding-top:12px}
+ .dp-row{flex-wrap:wrap;gap:8px}
+ .dp-play{width:32px;height:32px;flex-basis:32px}
+ .dp-meta{flex:1 1 auto;min-width:70px}
+ .dp-toggle{order:3;flex:1 1 100%;text-align:center;font-size:8px;padding:5px 7px}
+ .dp-state{font-size:8px;letter-spacing:.5px}
+}
